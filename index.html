@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Abeginner HTML website with example of text, links, lists, tables, and forms."
+    />
+    <title>Meu Primeiro Site em HTML </title>
+</head>
+<body>
+    <header>
+        <h1>Minha primeira página web</h1>
+        <p>Estou aprendendo a criar sites com HTML..</p>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+            <a href="sobre.html">Sobre a página</a>
+        </nav>    
+    </header>
+    <!-- -->
+    <main>
+        <section id="about">
+            <h2> Sobre este curso</h2>
+            <p>O HTML confere <strong>estrutura</strong> a cada página da web.</p>
+            <p>Vamos aprender tudo <em>passo a passo</em>.</p>
+            <p>HTML<br>CSS<br>JavaScript</p>
+        </section>
+        <section>
+            <h2>Tópicos que vamos aprender</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3> Meus passos de aprendizado</h3>
+            <ol>
+                <li>Escreva o HTML</li>
+                <li>Salve o arquivo</li>
+                <li>Verifique o navegador</li>
+            </ol>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/web/HTML"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Leia o guia HTML da MDN</a>
+            </p>
+        </section>
+        <section>
+            <h2>Visão geral da tecnologia</h2>
+            <table>
+                <caption>
+                    Tecnologias web fundamentais
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tecnologia</th>
+                        <th scope="col">Propósito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estrutura o conteúdo</td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td>CSS</td>
+                    <td>Aplica estilos à página</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Adiciona interatividade</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name"
+                    name="name" required/> 
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                    name="email" required/>
+                </p>
+                <p>
+                    <label for="topic">Tópico</label>
+                    <select id="topic" name="topic">
+                        <option value="">escolha um tópico</option>
+                        <option value="html">HTML</option>
+                        <option value="website">Feedback sobre o site</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Menssagem</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p>
+                    <input type="checkbox" id="updates" name="updates" />
+                    <label for="updates">Envie-me atualizações do site</label>
+                </p>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Criado enquanto aprendia HTML.</p>
+    </footer>
+</body>
+</html>
